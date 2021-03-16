@@ -1,0 +1,38 @@
+Good afternoon ma'am
+Good after noon guys.
+Today out team is here to present on our project Egram Panchayat.
+
+As MAhatma Gandhi quoted " The future of India lies in its villages", it would be useful that we focus on development
+of our villages. As a first step towards development,we have came up with an idea towards digitalisation of ours villages.
+Our goal is to bring Gram panchayat at the fingertips of our villagers . 
+
+
+Before talking about our idea I would like to discuss about the problems faced by traditional system.
+
+Talking about Panchayat,the first thought ,that strikes our minds , is about those piles of papers,documents.
+Besides this there is a fear of losing or damaging the documents.
+Next, people don't folllow deadline regarding bill payments and in times like this it is impossible for everyone to personaaly pay the bills.
+Besides this Pamchayats needs to send thier officilas to notify about bills.
+And Villagers need to visit in person to carry out bill transactions,issue documents with the panchayat.
+
+Then , there is no awreness about the government schemes deployed for the benefit of people ,among the villagers.
+
+
+
+So observing the above problems , we were encouraged to design some effiicent solutions. .First of all, Our Project would be able to 
+provide secure payment gateway to pay revenue taxes online.Besides this the users will recieve digital payment Reciepts.
+Secoondly,We have dedicated separate tab to display Government schemes available for villagers which will bring awreness among them.
+Third, the villagers would be able to apply and issue personal documents like residential certificate etc.,digitally without visiting in-person.
+
+LAstly, There will be admin friendly dashboard which will help the panchayat authorities to manage and administer their work.
+
+Now talking about scope of out project , our main goal is to develop a hasssel free web portal which wil solve above problems.
+Milestones to achieve , would be like sending reminder notifications to our end users regarding pending bills.
+Though there are limitations , like a need of a large database , illiterate end users and yes definitely security of payments.
+
+
+Our basic requirement ,is that we will require a conscious authority to manage all this works from the panchayat side.
+
+At last,if successful, We would be able to expand our project to various other villages panchayats.
+
+Now,I would like to hand over to govind.
