@@ -1,0 +1,47 @@
+
+
+
+
+
+Hello Mr.Yadav , how did you find the mean, standart deviation for transformations? We have used 244,244 resize for images for pre-trained model. Why we did that? And one last question why we have chosen the larning rate 3e-5? Thank you for this project and answers.
+
+
+Since we are using a pre-trained model from torchvision, we are using the same values for input normalization that were used in the original training by the pytorch team. We are using the size 224 because that's the smallest size that can be used if using pre-trained weights. You can find more detail on using pre-trained torchvision models here.
+
+The learning rate value is typically assumed to be a common value at the start of your model training process and then it is tuned further either manually or by using grid search or other hyperparameter search methods. If you're looking for it manually, I'd usually start with a value known to work in similar cases, then change it depending on if I see don't see convergence during training. I'd usually change it by a factor of 10 or by a factor of 3. And if you're looking to tune the learning rate or any other hyperparameter further and want to try out a lot of values, look into grid search, random search, bayesian optimization or other techniques
+
+
+
+
+
+
+
+Deployment:  https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html
+
+
+Pytorch Documentation : https://pytorch.org/docs/stable/index.html
+
+
+
+
+database link :   https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

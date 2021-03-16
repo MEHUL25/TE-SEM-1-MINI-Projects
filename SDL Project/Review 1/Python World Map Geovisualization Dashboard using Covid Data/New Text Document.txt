@@ -1,0 +1,190 @@
+
+
+By the end of this project, you will know how to access data via APIs, convert encoded UTF-8 data to JSON, normalize json data to create a pandas data frame, generate a choropleth map, generate markers, work with geo data and generate heat maps.
+
+
+
+Key Concepts
+Access Data via an API.
+Data Preprocessing.
+Generate Choropleth Map
+Generate circular markers
+Generate Heat Map wit Circular Markers
+
+
+
+
+About this Course
+This guided project is for absolute beginners in data science who want to learn about geovisualization using Python.
+Generate two interactive maps in under an hour, just like this: https://vinitasilaparasetty.github.io/covid-map/
+
+By the end of this project, you will know how to access data via APIs, convert encoded UTF-8 data to JSON, normalize json data to create a pandas data frame, generate a choropleth map, generate markers, work with geo data and generate heat maps.
+
+Special Features:
+
+1) Learn a cool hack using one line of code to convert a jupyter nootebook into a dashboard.
+2) Work with "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"
+3)After you complete this project, you get a jupyter notebook of all the work you covered (including gifs). It acts as a useful learning tool that you can refer to at any time in the future. 
+4) Important terminology and definitions are explained.
+
+Note: This course works best for learners who are based in the North America region. We’re currently working on providing the same experience in other regions.
+
+
+Welcome!
+Welcome to Python World Map Geovisualization Dashboard using Covid Data. This is a project-based course which should take approximately 1 hour to finish. Before diving into the project, please take a look at the course objectives and structure:
+
+Course Objectives
+In this course, we are going to focus on these learning objectives:
+
+1. Access data via an API.
+
+2. Data Preprocessing.
+
+3.  Generate a choropleth map.
+
+4. Generate circular markers.
+
+5. Generate a heat map.
+
+6. Convert Jupyter notebook to dashboard.
+
+Course Structure
+This course is divided into 3 parts:
+
+Preliminary reading Material.
+Python World Map Geovisualization Dashboard using Covid Data: This is the hands on project that we will work on in Rhyme.
+Graded Quiz: This is the final assignment that you need to pass in order to finish the course successfully.
+Project Structure
+The hands on project on Python World Map Geovisualization Dashboard using Covid Data is divided into the following tasks:
+
+Task 1: Access data via an API.
+
+Task 2: Data Preprocessing.
+
+Task 3:  Generate a choropleth map.
+
+Task 4: Generate circular markers.
+
+Task 5: Generate a heat map.
+
+Task 6: Convert Jupyter notebook to dashboard.
+
+Meet the Instructor
+Hi! I am Vinita Silaparasetty, a certified data science instructor specializing in Python and R for machine learning as well as Tensorflow 2 and Keras for Deep Learning. I am the author of the book " Deep Learning Projects using TensorFlow 2, Neural Network Development using Python and Keras " published by Apress, New York. I'm passionate about data science and I want to make sure that you are too.
+
+About Rhyme
+This course runs on Coursera's hands-on platform called Rhyme. On Rhyme, you do projects in a hands-on manner in your browser. You will get instant access to pre-configured cloud desktops that have all the software and data you will need. So, you can just focus on the learning. For this project, this means instant access to a cloud desktop with all software pre-installed.
+
+If you need help troubleshooting Rhyme, please refer to the Coursera Help Center for more information.
+
+Earn a Certificate
+After you have completed this hands-on project, you will be able to assess your knowledge using an ungraded assignment. Once you are comfortable with the concepts, take the final quiz, score higher than 80% to earn your certificate.
+
+
+
+
+About the Dataset
+The data for this guided project is sourced from "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University" and is updated daily.
+
+Official Github repository: https://github.com/CSSEGISandData/COVID-19
+
+The data for this project is accessed through an easy API developed by Kyle Redelinghuys.
+
+Official site: https://covid19api.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Summary
+Throughout this guided project on "Covid World Map Geovisualization in Python" , you have learned:
+
+An API (Application Programming Interface) is an interface that simplifies certain tasks, such as extracting subsets of data from a large repository or database.
+Data is received from the API as one of the following formats:
+Tabular Human-readable file: Tabular files that are organized into columns and rows. They have a “flat” structure rather than hierarchical. For example: CSV files (Comma Separated Values) , spreadsheets such as Microsoft Excel, etc.
+Structured Machine-readable files: Files that are hierarchical and structured in a way that optimizes machine readability. They can be stored in a text format. For example: JSON files.
+3.An API request has three stages:
+
+Data request: You try to access a URL in your browser that specifies a particular subset of data. It is possible to request the entire data but will use a lot of computational power.
+Data processing: The web server uses the url you entered, to query a specified dataset.
+Data response: The web server then returns a data file.
+4. REST, or RESTful, API is a common type of API. A RESTfulAPI is a web API that uses URL arguments to specify what information you need.
+
+5. Authentication is used to identify who you are. This includes a username and password, which is used to identify who you are.
+
+6. An HTTP request uses a token for authentication, so the the user does not have to keep sending their username and password across the server.
+
+7. A token has 3 components:
+
+Header: Contains the type of algorithm used to create the signature.
+Payload: Contains the data that you requested.
+Signature: Contains the encrypted part of the header and payload separated by a period.
+8. "UTF-8" is a variable-width character encoding capable of encoding all 1,112,064 valid character code points in Unicode using one to four one-byte code units. The encoding is defined by the Unicode Standard, and was originally designed by Ken Thompson and Rob Pike.
+
+9. A choropleth map has shaded or patterned regions corresponding to a statistical variable that represents an aggregate summary of a geographic characteristic within each area.
+
+10. A heat map is a data visualization technique that shows magnitude of a phenomenon as two dimensional colors.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Convert a Jupyter Notebook into a Dashboard
+Note: So that you don't have to enter your personal details into the VM, this section of the project is a set of written instructions which you can try out on your personal system.
+
+To create a dashboard like the one I created in the video, follow these steps:
+
+1) Make a copy of the notebook that you receive after completing this project. Rename it 'covidmap'. (Or any other short name)
+
+2) Remove all Markdown cells.
+
+
+3) The only output that should be visible are the final choropleth map with markers and the final heatmap with markers. To prevent other outputs from being displayed, just add a semicolon at the end of the code and rerun the kernel.
+
+
+4) To add a heading above the maps to indicate what they represent, just add a markdown cell above the cell containing the map output.
+
+
+5) Save your notebook. Ensure that it is in the same directory as your jupyter lab installation.
+
+6) Open the terminal and type in:
+
+jupyter nbconvert covidmap1.ipynb --no-input --no-prompt
+
+
+Note: If you named the copy of the notebook something else, replace that name where I have used 'covidmap.ipynb'
+
+7) You will now have a file named 'covidmap.html'
+
+Uploading to Github
+To share your shiny new dashboard with the world, follow these steps:
+
+Change the name of the html file to 'index.html'
+create a github repository and ensure that you initialize it with a read.me file.
+Once the repository is ready, rename the dashboard to 'index.html'. If you name it anything else, it will not show up.
+Once the dashboard is successfully uploaded, remove all content from the read.me file.(Do not delete the file, it just needs to be empty)
+Go to settings of your repository and enable github pages.
+Visit the link of the newly created gihub page and your dashboard should appear!

@@ -1,0 +1,3 @@
+http://meet.google.com/snk-rybt-xte
+
+jupyter nbconvert covidmap1.ipynb --no-input --no-prompt

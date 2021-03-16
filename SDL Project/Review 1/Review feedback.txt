@@ -1,0 +1,40 @@
+-Focus more on implementations.
+
+
+
+-advantages of cnn  ,and why we choose cnn over the other.
+Answer : The main advantage of CNN compared to its predecessors is that it 
+automatically detects the important features without any human supervision.
+ For example, given many pictures of cats and dogs it learns distinctive 
+features for each class by itself.
+
+
+
+
+
+
+
+Convolutional Neural Network (CNN, or ConvNet) are a special kind of 
+multi-layer neural networks, designed to recognize visual patterns directly 
+from pixel images with minimal pre-processing. It is a special architecture 
+of artificial neural networks. Convolutional neural network uses some of its 
+features of visual cortex and have therefore achieved state of the art results
+ in computer vision tasks. Convolutional neural networks are comprised of
+ two very simple elements, namely convolutional layers and pooling layers. 
+Although simple, there are near-infinite ways to arrange these layers for a 
+given computer vision problem. The elements of a convolutional neural 
+network, such as convolutional and pooling layers, are relatively straight
+forward to understand. The challenging part of using convolutional neural 
+networks in practice is how to design model architectures that best use 
+these simple elements. The reason why convolutional neural network is 
+hugely popular is because of their architecture, the best thing is there is no 
+need of feature extraction. The system learns to do feature extraction and 
+
+the core concept is, it uses convolution of image and filters to generate 
+invariant features which are passed on to the next layer. The features in 
+next layer are convoluted with different filters to generate more invariant 
+and abstract features and the process continues till it gets final feature/
+output which is invariant to occlusions. The most commonly used 
+architectures of convolutional neural network are LeNet, AlexNet, ZFNet, 
+GoogLeNet, VGGNet, and ResNet.
+

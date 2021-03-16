@@ -1,0 +1,66 @@
+
+
+
+About this Course
+In this 2-hour long guided project, we will use a ResNet-18 model and train it on a COVID-19 Radiography dataset. This dataset has nearly 3000 Chest X-Ray scans which are categorized in three classes - Normal, Viral Pneumonia and COVID-19. Our objective in this project is to create an image classification model that can predict Chest X-Ray scans that belong to one of the three classes with a reasonably high accuracy. Please note that this dataset, and the model that we train in the project, can not be used to diagnose COVID-19 or Viral Pneumonia. We are only using this data for educational purpose.
+
+Before you attempt this project, you should be familiar with programming in Python. You should also have a theoretical understanding of Convolutional Neural Networks, and optimization techniques such as gradient descent. This is a hands on, practical project that focuses primarily on implementation, and not on the theory behind Convolutional Neural Networks.
+
+Note: This course works best for learners who are based in the North America region. We’re currently working on providing the same experience in other regions.
+
+
+
+
+
+
+Key Concepts
+Create custom Dataset and DataLoader in PyTorch
+Train a ResNet-18 model in PyTorch to perform Image Classification
+
+
+
+
+
+
+
+
+
+Welcome!
+Welcome to Detecting COVID-19 with Chest X-Ray using PyTorch. This is a project-based course which should take less than 2 hours to finish. Before diving into the project, please take a look at the course objectives and structure:
+
+Course Objectives
+In this course, we are going to focus on the following learning objectives:
+
+Create custom Dataset and DataLoader in PyTorch
+Train a ResNet-18 model in PyTorch to perform Image Classification
+By the end of this course, you will be able to create Convolutional Neural Networks, and will be able to train it to classify Chest X-Ray scans with reasonably high accuracy.
+
+Course Structure
+This course is divided into 3 parts:
+
+Course Overview: This introductory reading material.
+Detecting COVID-19 with Chest X-Ray using PyTorch: This is the hands on project that we will work on in Rhyme.
+Graded Quiz: This is the final assignment that you need to pass in order to finish the course successfully.
+Project Structure
+The hands on project on Detecting COVID-19 with Chest X-Ray using PyTorch is divided into following tasks:
+
+Task 1: Introduction
+Task 2: Importing Libraries
+Task 3: Creating Custom Dataset
+Task 4: Image Transformations
+Task 5: Prepare DataLoader
+Task 6: Data Visualization
+Task 7: Creating the Model
+Task 8: Training the Model
+Task 9: Final Results
+Meet the Instructor
+Amit is a Machine Learning Engineer with focus in creating deep learning based computer vision and signal processing products. He has led chat bot development at a large corporation in the past. Amit is one of the Machine Learning and Data Science instructors at Rhyme.
+
+About Rhyme
+This course runs on Coursera's hands-on platform called Rhyme. On Rhyme, you do projects in a hands-on manner in your browser. You will get instant access to pre-configured cloud desktops that have all the software and data you will need. So, you can just focus on the learning. For this project, this means instant access to a cloud desktop with Python, Jupyter, and PyTorch pre-installed.
+
+Earn a Certificate
+After you have completed the Detecting COVID-19 with Chest X-Ray using PyTorch hands-on project, you will be able to assess your knowledge using an ungraded assignment. Once you are comfortable with the concepts, take the final quiz, score higher than 80% to earn your certificate.
+
+
+
