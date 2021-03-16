@@ -1,0 +1,223 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Convert or Export HTML Table to PDF file using jQuery | Tutorialswebsite</title>
+     <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        h2
+        {
+            color:red;
+            font-size: 40px;
+        }
+        h1{
+          font-size: 40px;
+        }
+
+
+
+
+        * {
+            box-sizing: border-box;
+          }
+
+          input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
+
+          input[type=date], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
+
+          input[type=number], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
+
+          label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+          }
+
+          input[type=button], input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+
+          .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          }
+
+          .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+          }
+
+          .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+          }
+
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+              width: 100%;
+              margin-top: 0;
+            }
+          }
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+  <div class="container" id="mai">
+    <h1 style="text-align:center;">Residential Certificate Application Form</h1>
+        <form >
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="date" name="t_date" placeholder="Todays's date..">
+            </div>
+          </div>
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Your name..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Father's Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="father_name" name="fathername" placeholder="Your Father's name..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Family Income</label>
+              </div>
+              <div class="col-75">
+                <input type="number" id="income" name="family_income" placeholder="Your Income..">
+              </div>
+            </div>
+
+
+            <div class="row">
+              <input type="button" id="btnExport" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+     <div id="tblCustomers" >
+    </div>
+
+
+
+    <br />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        function generate()
+        {
+            var name=document.getElementById('name');
+            var fathers_name=document.getElementById('father_name');
+            var y_income=document.getElementById('income');
+            var today_date=document.getElementById('date');
+            var h="<h1>Mirzapur Gram Pancayat</h1>";
+            var s=`<br><br><br><br><h1>Date - ${today_date.value}</h1><br><br><br><br><h1>This is Certify that ${name.value} , son of ${fathers_name.value}is the resident of our Mirzapur village of district Pune ,state Maharashtra.</h1><br><br><h1>The Annual Income of his family is ${y_income.value} from all the sources</h1>`;
+            var t=document.getElementById('tblCustomers');
+            var f="<br><br><br><br><br><br><br><h2>Note : Please Note that, this copy of Residential Certificate is not valid until the Mirzapur Gram Panchayat has Attested it.</h2><br><h2>2. The appicant is instructed to get this Certificate attested from the Gram Panchayat Office.</h2>"
+            t.innerHTML=h+s+f;
+
+        }
+
+        $("body").on("click", "#btnExport", function ()
+        {
+
+            generate();
+            var h=document.getElementById('mai');
+            h.innerHTML="<h1 style=\"color:green\">You Certificate is downloaded successfully.Thanks for using this Facility.You can close This Browser Tab.<h1>";
+            html2canvas($('#tblCustomers')[0], {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("Residential-Certificate.pdf");
+                    var t=document.getElementById('tblCustomers');
+                    t.style.display="none";
+
+                }
+            });
+
+        });
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+
+Home : literacy rate,village,
+
+About Village : village facilities,panchayat projects,panchayat spendings
+
+Schemes : display schemes, 
+
+Log in/register :
+	Log in : 
+	- Check pending bills
+	- pay pending bill
+	- Request document
+Admin : 
+	- Generate Bill
+	- Update user info
+	- Add scheme
+
+about us: 
